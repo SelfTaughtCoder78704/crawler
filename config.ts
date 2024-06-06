@@ -12,7 +12,7 @@ type Config = {
   /** File name for the finished data */
   outputFileName: string;
   /** Optional cookie to be set. E.g. for Cookie Consent */
-  cookie?: {name: string; value: string}
+  cookie?: { name: string; value: string }
   /** Optional function to run for each page found */
   onVisitPage?: (options: {
     page: Page;
@@ -21,9 +21,9 @@ type Config = {
 };
 
 export const config: Config = {
-  url: "https://python.langchain.com/docs/get_started/introduction",
-  match: "https://python.langchain.com/docs/**",
-  selector: `.docMainContainer_gTbr`,
+  url: "https://www.bmg360.com/",
+  match: "https://www.bmg360.com/**",
+  selector: `html`,
   maxPagesToCrawl: 1000,
   outputFileName: "output.json",
 };

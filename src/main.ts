@@ -71,4 +71,12 @@ for (const file of jsonFiles) {
   results.push(data);
 }
 
-await writeFile(config.outputFileName, JSON.stringify(results, null, 2));
+console.log(results);
+
+// await writeFile(config.outputFileName, JSON.stringify(results, null, 2));
+
+// instead, write it as a text file
+// await writeFile(config.outputFileName, results.map((r) => r.html).join("\n\n"));
+
+
+
